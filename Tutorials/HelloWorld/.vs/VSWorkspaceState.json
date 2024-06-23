@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HelloWorld",
+    "\\HelloWorld\\Receive",
+    "\\HelloWorld\\Send"
+  ],
+  "SelectedNode": "\\HelloWorld\\Send\\Send.csproj",
+  "PreviewInSolutionExplorer": false
+}

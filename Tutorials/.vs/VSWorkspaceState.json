@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Topics",
+    "\\Topics\\EmitLogTopic",
+    "\\Topics\\ReceiveLogsTopic",
+    "\\WorkQueues\\NewTask",
+    "\\WorkQueues\\Worker"
+  ],
+  "SelectedNode": "\\Topics\\ReceiveLogsTopic\\ReceiveLogsTopic.cs",
+  "PreviewInSolutionExplorer": false
+}

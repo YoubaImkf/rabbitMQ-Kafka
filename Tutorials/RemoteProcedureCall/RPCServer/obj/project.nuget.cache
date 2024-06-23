@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "NgmqVZJLYy/a5zVQk/T39/C4/+lTjtRSf11TYVTsGtMGiYErVpJhHaYDPV/vm1ifxUGkDFhrSXN6wHC6d5+RWw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\minec\\Documents\\Efrei\\RabbitMQ\\RABBITMQ_KAFKA_LESSONS_GRP_02\\PARTIE_PRATIQUE\\Tutorials\\RemoteProcedureCall\\RPCServer\\RPCServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\minec\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\minec\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\minec\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

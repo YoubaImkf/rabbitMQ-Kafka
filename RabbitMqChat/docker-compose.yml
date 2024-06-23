@@ -1,0 +1,43 @@
+version: "3.4"
+
+services:
+  chat.blazorapp:
+    container_name: chat.blazorapp
+    build: 
+      context: .
+      dockerfile: RabbitMqChat/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      - chat.rabbitmq
+      - chat.sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=chat.sqlserver;Database=RabbitMqChat;User=sa;Password=Your_password123;TrustServerCertificate=True;Trusted_Connection=false;MultipleActiveResultSets=true
+
+  chat.rabbitmq:
+    container_name: chat.rabbitmq
+    image: "rabbitmq:3-management"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "status"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
+
+  chat.sqlserver:
+    container_name: chat.sqlserver
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+
+volumes:
+  sqlserver-data:
