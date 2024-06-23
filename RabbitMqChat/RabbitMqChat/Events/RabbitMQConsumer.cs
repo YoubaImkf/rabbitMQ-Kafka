@@ -13,7 +13,7 @@ namespace RabbitMqChat.Events
         private readonly ConnectionFactory _factory;
         private IConnection _connection;
         private IModel _channel;
-        private readonly bool _sendMessageToChatRoom = true; // Correctly initialized
+        private readonly bool _sendMessageToChatRoom = true;
 
         public RabbitMQConsumer(IHubContext<ChatHub> chatHubContext, ILogger<RabbitMQConsumer> logger)
         {
