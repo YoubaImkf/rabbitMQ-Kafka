@@ -2,6 +2,10 @@
 
 RabbitMQChat is a simple chat application using RabbitMQ with ASP.NET Core Blazor (.NET 8). This project demonstrates message producers and consumers with RabbitMQ, utilizing Docker for managing the development environment.
 
+
+
+![RabbitMQChat](assets/sample-chat.png)
+
 ## 📝 Prerequisites
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
@@ -41,8 +45,8 @@ RabbitMQ management console can be accessed at [http://localhost:15672](http://l
 
 - Username: guest
 - Password: guest
-
-
+  
+  
 
 ## Running the Project without Docker
 
